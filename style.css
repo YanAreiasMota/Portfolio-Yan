@@ -10,8 +10,8 @@ header {
     text-align: left;
 }
 
-.main-header {
-    border-bottom: 1px solid white; /* Adiciona uma linha branca na parte inferior do cabeçalho principal */
+.main-header { 
+    border-bottom: 1px solid white; 
     padding: 15px;
 }
 
@@ -25,12 +25,12 @@ header h1 {
 }
 
 header a {
-    color: white; /* Define a cor do link como branco */
+    color: white; 
     text-decoration: none;
 }
 
 header a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline; 
 }
 
 .nav-header nav ul {
@@ -62,22 +62,22 @@ header a:hover {
 }
 
 .program-header h2 {
-    margin-top: 10px; /* Adiciona um pequeno espaço entre as duas linhas de texto */
+    margin-top: 10px; 
     font-size: 55px;
 }
 
 .program-header {
-    position: relative; /* Necessário para posicionar a imagem de fundo corretamente */
+    position: relative; 
     text-align: center;
     color: white;
 }
 
 .full-width-image {
-    width: 100vw; /* Define a largura da imagem como 100% da largura da viewport */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove espaços extras ao redor da imagem */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove preenchimentos padrão */
+    width: 100vw;
+    height: auto; 
+    display: block;
+    margin: 0; 
+    padding: 0; 
 }
 
 
@@ -94,13 +94,13 @@ header a:hover {
 }
 .full-width-header {
     position: relative;
-    overflow: hidden; /* Evita que o conteúdo se estenda para fora do cabeçalho */
+    overflow: hidden; 
 }
 
 .full-width-header img {
-    width: 100%; /* Garante que a imagem ocupe toda a largura do cabeçalho */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove espaços extras ao redor da imagem */
+    width: 100%; 
+    height: auto; 
+    display: block; 
     border-top: 1px solid white;
 }
 
@@ -110,7 +110,7 @@ header a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white; /* Define a cor do texto como branca */
+    color: white; 
 }
 
 .sub-header {
