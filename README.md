@@ -1,1 +1,1 @@
-# Este portfólio foi desenvolvido com o propósito de proporcionar uma visão abrangente do meu trabalho e habilidades, com o objetivo de destacar minha experiência e projetos relevantes para oportunidades de carreira.
+# Este portfólio foi desenvolvido com o propósito de proporcionar uma visão abrangente do meu trabalho e habilidades, mesmo sem uma extensa experiência estou comprometido em crescer e desenvolver-me profissionalmente.
