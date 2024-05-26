@@ -1,33 +1,159 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
 }
-.header, .footer {
-    background-color: #3b5998; /* Cor do Facebook */
-    color: #fff;
-    padding: 1em;
+
+header {
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+.main-header {
+    border-bottom: 1px solid white; /* Adiciona uma linha branca na parte inferior do cabeçalho principal */
+    padding: 15px;
+}
+
+.nav-header {
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header a {
+    color: white; /* Define a cor do link como branco */
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.nav-header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.nav-header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-header nav ul li a {
+    font-size: 24px;
+}
+.program-header {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
     text-align: center;
 }
-.main {
-    padding: 1em;
-    text-align: center;
+
+.program-header h1,
+.program-header h2 {
+    margin: 0;
+    font-size: 24px;
 }
-.carousel-container {
+
+.program-header h2 {
+    margin-top: 10px; /* Adiciona um pequeno espaço entre as duas linhas de texto */
+    font-size: 55px;
+}
+
+.program-header {
+    position: relative; /* Necessário para posicionar a imagem de fundo corretamente */
+    text-align: center;
+    color: white;
+}
+
+.full-width-image {
+    width: 100vw; /* Define a largura da imagem como 100% da largura da viewport */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras ao redor da imagem */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+}
+
+
+
+.program-header h1,
+.program-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.program-header h2 {
+    margin-top: 10px;
+    font-size: 50px;
+}
+.full-width-header {
     position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 10px;
+    overflow: hidden; /* Evita que o conteúdo se estenda para fora do cabeçalho */
 }
-.carousel {
+
+.full-width-header img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do cabeçalho */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras ao redor da imagem */
+    border-top: 1px solid white;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Define a cor do texto como branca */
+}
+
+.sub-header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sub-header h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.sub-header-links {
     display: flex;
-    transition: transform 0.5s ease;
+    justify-content: space-around;
+    margin-top: 20px;
 }
-.carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+
+.sub-header-item {
+    flex: 1;
+    padding: 10px;
+}
+
+.sub-header-item h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.sub-header-item p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.sub-header-item a {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sub-header-item a:hover {
+    text-decoration: underline;
 }
