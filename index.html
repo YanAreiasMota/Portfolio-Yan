@@ -1,42 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Meu Site</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Meu Portfólio</h1>
+    <header class="header">
+        <h1>Barra Superior</h1>
     </header>
+
     <main>
-        <section>
-            <h2>Projetos em Java</h2>
-            <ul>
-                <li><a href="scripts/java/seu_programa.java">Seu Programa Java</a></li>
-                <!-- Adicione mais projetos aqui -->
-            </ul>
-        </section>
-        <section>
-            <h2>Projetos em C</h2>
-            <ul>
-                <li><a href="scripts/c/seu_programa.c">Seu Programa C</a></li>
-                <!-- Adicione mais projetos aqui -->
-            </ul>
-        </section>
-        <section>
-            <h2>Projetos em JavaScript</h2>
-            <ul>
-                <li><a href="scripts/javascript/seu_programa.js">Seu Programa JavaScript</a></li>
-                <!-- Adicione mais projetos aqui -->
-            </ul>
-        </section>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="imagem_java.jpg" alt="Programa em Java">
+                <img src="imagem_c.jpg" alt="Programa em C">
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2024 Seu Nome</p>
+
+    <footer class="footer">
+        <h2>Barra Inferior</h2>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
