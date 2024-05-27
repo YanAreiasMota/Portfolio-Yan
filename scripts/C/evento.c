@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//Código feito para agilizar processo de cálculo de eventos para a empresa BoutiqueA
 int main() {
     int quantidadeEventos, i;
     int tipoEvento, numeroPessoas, duracaoBrunch, buffetEscolhido;
