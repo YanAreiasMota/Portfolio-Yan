@@ -60,15 +60,17 @@ body, html {
 
 @media only screen and (max-width: 768px) {
     .container {
-        flex-direction: column; 
+        flex-direction: row; /* Mudar a direção da flexbox para linha */
+        flex-wrap: wrap; /* Permitir que as colunas quebrem para a próxima linha */
     }
     
     .left-side, .right-side {
-        flex: none; 
-        width: 100%; 
+        flex: 1; /* As colunas ocupam a mesma largura */
+        width: 100%; /* Define a largura para ocupar 100% da linha */
+        max-width: 50%; /* Define a largura máxima para ocupar metade da tela */
     }
 
     .circle-extension {
-        display: none; /* Para ocultar o elemento "circle-extension" em dispositivos móveis */
+        display: none; /* Oculta o elemento "circle-extension" em dispositivos móveis */
     }
 }
