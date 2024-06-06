@@ -60,11 +60,15 @@ body, html {
 
 @media only screen and (max-width: 768px) {
     .container {
-        flex-direction: row;
+        flex-direction: column; 
     }
     
     .left-side, .right-side {
         flex: none; 
         width: 100%; 
+    }
+
+    .circle-extension {
+        display: none; /* Para ocultar o elemento "circle-extension" em dispositivos móveis */
     }
 }
