@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden; /* Impedir rolagem horizontal */
+    overflow-x: hidden; 
 }
 
 .container {
@@ -43,7 +43,7 @@ body, html {
 #titulo-destaque {
     color: black;
     font-size: 50px; 
-    margin: 20px; /* Adicionando margem para afastar do topo */
+    margin: 20px; 
 }
 
 .left-side h1 {
@@ -60,11 +60,11 @@ body, html {
 
 @media only screen and (max-width: 768px) {
     .container {
-        flex-direction: column; /* Alterar direção do flex para uma coluna em dispositivos móveis */
+        flex-direction: column; 
     }
     
     .left-side, .right-side {
-        flex: none; /* Remover flex para permitir que eles se ajustem ao conteúdo */
-        width: 100%; /* Definir a largura como 100% para ocupar toda a largura da tela */
+        flex: none; 
+        width: 100%; 
     }
 }
