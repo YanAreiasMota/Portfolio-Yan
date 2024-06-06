@@ -63,7 +63,7 @@ body, html {
     
     .left-side{
         margin: left;
-        max-width: 45%;
+        max-width: 50%;
         text-align: left;
         font-size: smaller;
         
@@ -85,7 +85,7 @@ body, html {
 
     .right-side{
         margin: right;
-        max-width: 55%;
+        max-width: 50%;
         font-size: smaller;
         
     }
@@ -116,7 +116,7 @@ body, html {
     }
 
     #titulo-destaque{
-        font-size: 30px;
+        font-size: max(25px, 5vw);
     }
 
 
