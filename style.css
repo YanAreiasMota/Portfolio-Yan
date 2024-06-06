@@ -179,9 +179,3 @@ header a:hover {
     color: rgb(200, 46, 214);
 }
 
-@media only screen and (max-width: 768px) {
-
-    #link1 {
-        color: rgb(200, 46, 214);
-    }
-}
