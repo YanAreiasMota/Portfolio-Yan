@@ -1,3 +1,4 @@
+/* Estilos para dispositivos grandes */
 body, html {
     margin: 0;
     padding: 0;
@@ -58,6 +59,7 @@ body, html {
     color: orange; 
 }
 
+/* Estilos para dispositivos móveis */
 @media only screen and (max-width: 768px) {
     .container {
         flex-direction: column; 
