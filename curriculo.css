@@ -60,21 +60,15 @@ body, html {
 
 @media only screen and (max-width: 768px) {
     .container {
-        flex-direction: row; /* Mudar a direção da flexbox para linha */
-        flex-wrap: wrap; /* Permitir que as colunas quebrem para a próxima linha */
+        flex-direction: column; 
     }
     
     .left-side, .right-side {
-        flex: 1; /* As colunas ocupam a mesma largura */
-        width: 49%; /* Define a largura para ocupar quase metade da linha */
-        max-width: 49%; /* Define a largura máxima para ocupar quase metade da tela */
-    }
-
-    .right-side {
-        margin-left: 2%; /* Adiciona um pequeno espaçamento entre as colunas */
+        flex: none; 
+        width: 100%; 
     }
 
     .circle-extension {
-        display: none; /* Oculta o elemento "circle-extension" em dispositivos móveis */
+        display: none; /* Para ocultar o elemento "circle-extension" em dispositivos móveis */
     }
 }
