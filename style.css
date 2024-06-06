@@ -10,12 +10,13 @@ header {
     text-align: left;
 }
 
-.main-header { 
+.cabecalho-principal { 
     border-bottom: 1px solid white; 
     padding: 15px;
+    overflow: auto; /* Adicionamos overflow para conter os elementos float */
 }
 
-.nav-header {
+.cabecalho-links {
     padding: 10px 0;
 }
 
@@ -33,46 +34,56 @@ header a:hover {
     text-decoration: underline; 
 }
 
-.nav-header nav ul {
+.cabecalho-links nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: right;
 }
 
-.nav-header nav ul li {
+.cabecalho-links nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
-.nav-header nav ul li a {
+.cabecalho-links nav ul li a {
     font-size: 24px;
 }
-.program-header {
+
+/* Adicionamos um estilo para os links à esquerda e à direita */
+.link-esquerda {
+    float: left;
+}
+
+.link-direita{
+    float: right;
+}
+
+.cabecalho-programas {
     background-color: black;
     color: white;
     padding: 40px 20px;
     text-align: center;
 }
 
-.program-header h1,
-.program-header h2 {
+.cabecalho-programas h1,
+.cabecalho-programas h2 {
     margin: 0;
     font-size: 24px;
 }
 
-.program-header h2 {
+.cabecalho-programas h2 {
     margin-top: 10px; 
     font-size: 55px;
 }
 
-.program-header {
+.cabecalho-programas {
     position: relative; 
     text-align: center;
     color: white;
 }
 
-.full-width-image {
+.tamanho-imagem {
     width: 100vw;
     height: auto; 
     display: block;
@@ -82,29 +93,29 @@ header a:hover {
 
 
 
-.program-header h1,
-.program-header h2 {
+.cabecalho-programas h1,
+.cabecalho-programas h2 {
     margin: 0;
     font-size: 24px;
 }
 
-.program-header h2 {
+.cabecalho-programas h2 {
     margin-top: 10px;
     font-size: 50px;
 }
-.full-width-header {
+.imagem-principal {
     position: relative;
     overflow: hidden; 
 }
 
-.full-width-header img {
+.imagem-principal img {
     width: 100%; 
     height: auto; 
     display: block; 
     border-top: 1px solid white;
 }
 
-.header-content {
+.conteudo-cabecalho {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -113,40 +124,40 @@ header a:hover {
     color: white; 
 }
 
-.sub-header {
+.cabecalho-2 {
     background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-.sub-header h1 {
+.cabecalho-2 h1 {
     margin: 0;
     font-size: 35px;
 }
 
-.sub-header-links {
+.cabecalho-2-links {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
 
-.sub-header-item {
+.cabecalho-2-conteudo{
     flex: 1;
     padding: 10px;
 }
 
-.sub-header-item h2 {
+.cabecalho-2-conteudoh2 {
     margin-top: 0;
     font-size: 28px;
 }
 
-.sub-header-item p {
+.cabecalho-2-conteudop {
     margin-top: 5px;
     font-size: 16px;
 }
 
-.sub-header-item a {
+.cabecalho-2-conteudoa {
     display: block;
     margin-top: 10px;
     color: white;
@@ -154,6 +165,11 @@ header a:hover {
     font-weight: bold;
 }
 
-.sub-header-item a:hover {
+.cabecalho-2-conteudoa:hover {
     text-decoration: underline;
+}
+
+.curriculo{
+    text-align: right;
+    margin-top: 0;
 }
