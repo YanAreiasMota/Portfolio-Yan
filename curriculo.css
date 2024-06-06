@@ -68,4 +68,8 @@ body, html {
         flex: none; 
         width: 100%; 
     }
+
+    .circle-extension {
+        display: block; /* Mostrar a "bolha" em dispositivos móveis */
+    }
 }
