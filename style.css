@@ -147,17 +147,17 @@ header a:hover {
     padding: 10px;
 }
 
-.cabecalho-2-conteudoh2 {
+.cabecalho-2-conteudo h2 {
     margin-top: 0;
     font-size: 28px;
 }
 
-.cabecalho-2-conteudop {
+.cabecalho-2-conteudo p {
     margin-top: 5px;
     font-size: 16px;
 }
 
-.cabecalho-2-conteudoa {
+.cabecalho-2-conteudo a {
     display: block;
     margin-top: 10px;
     color: white;
@@ -165,7 +165,7 @@ header a:hover {
     font-weight: bold;
 }
 
-.cabecalho-2-conteudoa:hover {
+.cabecalho-2-conteudo a:hover {
     text-decoration: underline;
 }
 
