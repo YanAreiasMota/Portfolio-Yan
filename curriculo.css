@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden; /* Impedir rolagem horizontal */
 }
 
 .container {
@@ -18,15 +19,12 @@ body, html {
 
 .left-side {
     background-color: rgb(201, 201, 201);
-    min-height: 100vh;
     padding-bottom: 30px;
 }
 
 .right-side {
     background-color: #ffffff; 
-    position: relative;
     z-index: 1; 
-    min-height: 100vh; 
     padding-bottom: 30px; 
 }
 
@@ -37,7 +35,7 @@ body, html {
     transform: translateX(-50%); 
     width: 100%; 
     height: 100px; 
-    background-color:rgb(201, 201, 201);
+    background-color: rgb(201, 201, 201);
     border-radius: 0 0 100% 100%;
     z-index: -1; 
 }
@@ -45,6 +43,7 @@ body, html {
 #titulo-destaque {
     color: black;
     font-size: 50px; 
+    margin: 20px; /* Adicionando margem para afastar do topo */
 }
 
 .left-side h1 {
@@ -60,6 +59,10 @@ body, html {
 }
 
 @media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Alterar direção do flex para uma coluna em dispositivos móveis */
+    }
+    
     .left-side, .right-side {
         flex: none; /* Remover flex para permitir que eles se ajustem ao conteúdo */
         width: 100%; /* Definir a largura como 100% para ocupar toda a largura da tela */
