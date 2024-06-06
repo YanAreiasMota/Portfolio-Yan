@@ -69,6 +69,19 @@ body, html {
         
         
     }
+    .left-side a{
+        font-size: 10px;
+    }
+
+    .left-side h1{
+        font-size: 15px;
+    }
+
+    .left-side p{
+        font-size: 10px;
+    }
+
+
 
     .right-side{
         margin: right;
@@ -76,6 +89,20 @@ body, html {
         font-size: smaller;
         
     }
+
+    .right-side a{
+        font-size: 10px;
+    }
+    
+    .right-side p{
+        font-size: 10px;
+    }
+
+    .right-side h2{
+        font-size: 15px;
+    }
+
+
     .circle-extension {
         position: absolute;
         top: 0;
@@ -92,9 +119,6 @@ body, html {
         font-size: 40px;
     }
 
-    #link {
-        font-size: 10px;
-    }
 
 
 }
