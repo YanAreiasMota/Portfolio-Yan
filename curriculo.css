@@ -69,4 +69,8 @@ body, html {
         flex: none; 
         width: 100%; 
     }
+    
+    .left-side, .right-side {
+        padding: 0; /* Remover o espaçamento inferior */
+    }
 }
