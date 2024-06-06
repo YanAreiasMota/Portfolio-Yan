@@ -10,6 +10,7 @@ body, html {
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: row; /* Definir a direção da flexbox como linha por padrão */
 }
 
 .left-side, .right-side {
@@ -60,7 +61,7 @@ body, html {
 
 @media only screen and (max-width: 768px) {
     .container {
-        flex-direction: column; 
+        flex-direction: column; /* Mudar a direção da flexbox para coluna em dispositivos móveis */
     }
     
     .left-side, .right-side {
