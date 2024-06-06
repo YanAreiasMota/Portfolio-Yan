@@ -7,7 +7,7 @@ body, html {
 .container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
 }
 
@@ -18,18 +18,16 @@ body, html {
 
 .left-side {
     background-color: rgb(201, 201, 201);
-    min-height: 100vh; /* Define a altura mínima para ocupar pelo menos toda a altura da página */
-    padding-bottom: 30%; /* Espaço extra abaixo do conteúdo para garantir que a cor de fundo seja visível */
+    min-height: 100vh;
+    padding-bottom: 30px;
 }
-
 
 .right-side {
     background-color: #ffffff; 
-    overflow: hidden;
     position: relative;
-    z-index: 1; /* Adicionado para garantir que o conteúdo seja exibido sobre o fundo */
-    min-height: 100vh; /* Define a altura mínima para ocupar pelo menos toda a altura da página */
-    padding-bottom: 30%;
+    z-index: 1; 
+    min-height: 100vh; 
+    padding-bottom: 30px; 
 }
 
 .circle-extension {
@@ -41,29 +39,32 @@ body, html {
     height: 100px; 
     background-color:rgb(201, 201, 201);
     border-radius: 0 0 100% 100%;
-    z-index: -1; /* Garante que a extensão circular fique atrás do conteúdo da right-side */
+    z-index: -1; 
 }
 
 #titulo-destaque {
-    /* Estilos específicos para o h1 com o ID 'titulo-destaque' */
     color: black;
-    font-size: 60px;
-    /* Outros estilos */
+    font-size: 30px; 
 }
-
 
 .left-side h1 {
     color: rgb(5, 131, 173);
+}
 
-}.right-side h1{
+.right-side h1{
     text-align: center;
 }
 
-.left-side a {
-    color: orange; /* Define a cor laranja para os links dentro de .left-side */
+.left-side a, .right-side a {
+    color: orange; 
 }
 
-.right-side a {
-    color: orange; /* Define a cor laranja para os links dentro de .left-side */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+    
+    .left-side, .right-side {
+        min-height: initial;
+    }
 }
-
