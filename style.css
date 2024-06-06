@@ -1,175 +1,76 @@
-body {
+/* Estilos para dispositivos grandes */
+body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow-x: hidden;
 }
 
-header {
-    background-color: black;
-    color: white;
-    text-align: left;
-}
-
-.main-header { 
-    border-bottom: 1px solid white; 
-    padding: 15px;
-    overflow: auto; /* Adicionamos overflow para conter os elementos float */
-}
-
-.nav-header {
-    padding: 10px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-header a {
-    color: white; 
-    text-decoration: none;
-}
-
-header a:hover {
-    text-decoration: underline; 
-}
-
-.nav-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-}
-
-.nav-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.nav-header nav ul li a {
-    font-size: 24px;
-}
-
-/* Adicionamos um estilo para os links à esquerda e à direita */
-.left-link {
-    float: left;
-}
-
-.right-link {
-    float: right;
-}
-
-.program-header {
-    background-color: black;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.program-header h1,
-.program-header h2 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.program-header h2 {
-    margin-top: 10px; 
-    font-size: 55px;
-}
-
-.program-header {
-    position: relative; 
-    text-align: center;
-    color: white;
-}
-
-.full-width-image {
-    width: 100vw;
-    height: auto; 
-    display: block;
-    margin: 0; 
-    padding: 0; 
-}
-
-
-
-.program-header h1,
-.program-header h2 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.program-header h2 {
-    margin-top: 10px;
-    font-size: 50px;
-}
-.full-width-header {
+.container {
     position: relative;
-    overflow: hidden; 
-}
-
-.full-width-header img {
-    width: 100%; 
-    height: auto; 
-    display: block; 
-    border-top: 1px solid white;
-}
-
-.header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white; 
-}
-
-.sub-header {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.sub-header h1 {
-    margin: 0;
-    font-size: 35px;
-}
-
-.sub-header-links {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
 }
 
-.sub-header-item {
+.left-side, .right-side {
     flex: 1;
-    padding: 10px;
+    position: relative;
 }
 
-.sub-header-item h2 {
-    margin-top: 0;
-    font-size: 28px;
+.left-side {
+    background-color: rgb(201, 201, 201);
+    padding-bottom: 30px;
 }
 
-.sub-header-item p {
-    margin-top: 5px;
-    font-size: 16px;
+.right-side {
+    background-color: #ffffff; 
+    z-index: 1; 
+    padding-bottom: 30px; 
 }
 
-.sub-header-item a {
-    display: block;
-    margin-top: 10px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.circle-extension {
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    height: 100px; 
+    background-color: rgb(201, 201, 201);
+    border-radius: 0 0 100% 100%;
+    z-index: -1; 
 }
 
-.sub-header-item a:hover {
-    text-decoration: underline;
+#titulo-destaque {
+    color: black;
+    font-size: 50px; 
+    margin: 20px; 
 }
 
-.curriculo{
-    text-align: right;
-    margin-top: 0;
+.left-side h1 {
+    color: rgb(5, 131, 173);
+}
+
+.right-side h1{
+    text-align: center;
+}
+
+.left-side a, .right-side a {
+    color: orange; 
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+    
+    .left-side, .right-side {
+        flex: none; 
+        width: 100%; 
+    }
+    
+    .left-side, .right-side {
+        padding: 0; /* Remover o espaçamento inferior */
+    }
 }
