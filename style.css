@@ -13,7 +13,7 @@ header {
 .main-header { 
     border-bottom: 1px solid white; 
     padding: 15px;
-    overflow: auto; 
+    overflow: auto; /* Adicionamos overflow para conter os elementos float */
 }
 
 .nav-header {
@@ -50,6 +50,7 @@ header a:hover {
     font-size: 24px;
 }
 
+/* Adicionamos um estilo para os links à esquerda e à direita */
 .left-link {
     float: left;
 }

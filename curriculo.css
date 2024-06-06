@@ -67,8 +67,4 @@ body, html {
         flex: none; 
         width: 100%; 
     }
-
-    .circle-extension {
-        display: none; /* Para ocultar o elemento "circle-extension" em dispositivos móveis */
-    }
 }
