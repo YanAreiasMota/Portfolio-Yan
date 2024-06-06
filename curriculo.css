@@ -66,9 +66,16 @@ body, html {
     
     .left-side, .right-side {
         flex: 1; /* As colunas ocupam a mesma largura */
-        width: calc(50% - 20px); /* Define a largura para ocupar metade da linha com espaço interno */
-        max-width: calc(50% - 20px); /* Define a largura máxima para ocupar metade da tela com espaço interno */
-        padding: 0 10px; /* Adiciona um espaçamento interno de 10 pixels em cada lado */
+        width: 50%; /* Define a largura para ocupar metade da linha */
+        max-width: 50%; /* Define a largura máxima para ocupar metade da tela */
+    }
+
+    .left-side {
+        padding-right: 10px; /* Adiciona um espaçamento interno de 10 pixels na direita da coluna esquerda */
+    }
+
+    .right-side {
+        padding-left: 10px; /* Adiciona um espaçamento interno de 10 pixels na esquerda da coluna direita */
     }
 
     .circle-extension {
