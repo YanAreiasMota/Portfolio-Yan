@@ -142,6 +142,10 @@ header a:hover {
     margin-top: 20px;
 }
 
+#link1 {
+    color: rgb(200, 46, 214);
+}
+
 .sub-header-item {
     flex: 1;
     padding: 10px;
@@ -172,4 +176,5 @@ header a:hover {
 .curriculo{
     text-align: right;
     margin-top: 0;
+    color: rgb(200, 46, 214);
 }
